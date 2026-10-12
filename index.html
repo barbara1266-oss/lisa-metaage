@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="楊淳雯 Lisa Yang｜邁達特數位 銷售產品線">
+<title>楊淳雯 Lisa Yang｜銷售產品線</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=IBM+Plex+Sans:wght@500;600;700&display=swap">
+<style>
+/* Layout: 名片延伸 — 橘色頁首帶 V 字缺口，下方單欄產品線，手機優先 */
+:root{
+  --orange:#E8731A; --orange-deep:#C25A0C; --orange-soft:#FDF0E6;
+  --bg:#F7F4F1; --surface:#FFFFFF; --fg:#22201E; --muted:#6E655E; --line:#ECE4DD;
+  --on-orange:#FFFFFF;
+  --f-body:'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;
+  --f-brand:'IBM Plex Sans','Noto Sans TC',sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --orange:#F0832E; --orange-deep:#B85510; --orange-soft:#3A2617;
+  --bg:#171412; --surface:#221E1B; --fg:#F2ECE6; --muted:#ADA299; --line:#352E29; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --orange:#F0832E; --orange-deep:#B85510; --orange-soft:#3A2617;
+  --bg:#171412; --surface:#221E1B; --fg:#F2ECE6; --muted:#ADA299; --line:#352E29; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:16px;line-height:1.6;margin:0}
+.wrap{max-width:640px;margin:0 auto;padding-inline:16px;padding-block:0 40px}
+header{background:var(--orange);color:var(--on-orange);margin-inline:-16px;padding:28px 24px 44px;position:relative;
+  clip-path:polygon(0 0,100% 0,100% calc(100% - 22px),calc(50% + 22px) calc(100% - 22px),50% 100%,calc(50% - 22px) calc(100% - 22px),0 calc(100% - 22px))}
+.eyebrow{font-size:13px;letter-spacing:.12em;opacity:.9;margin:0}
+h1{font-size:clamp(28px,7vw,38px);font-weight:900;margin:6px 0 4px;text-wrap:balance}
+.who{margin:0;font-size:15px;font-weight:500}
+.slogan{margin:22px 0 0;font-weight:700;font-size:17px;text-wrap:balance}
+.slogan span{color:var(--orange)}
+section{margin-top:28px}
+h2{font-size:13px;letter-spacing:.14em;color:var(--orange);margin:0 0 12px;font-weight:700}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
+.chips li{font-family:var(--f-brand);font-weight:600;font-size:15px;padding:6px 14px;border-radius:999px;background:var(--orange-soft);color:var(--fg);border:1px solid var(--line)}
+.chips li.top{background:var(--orange);color:var(--on-orange);border-color:var(--orange)}
+.lines{display:grid;gap:10px;margin:0;padding:0;list-style:none}
+.lines li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;display:grid;gap:4px;min-width:0}
+.cat{font-family:var(--f-brand);font-weight:700;font-size:17px;color:var(--orange)}
+.brands{color:var(--fg);font-size:15px}
+.sol{background:var(--surface);border-left:4px solid var(--orange);padding:14px 18px;border-radius:0 12px 12px 0}
+.sol .cat{display:block}
+footer{margin-top:32px;padding-top:20px;border-top:1px solid var(--line);display:grid;gap:6px}
+.name{font-weight:700;font-size:18px}
+.contact{font-family:var(--f-brand);font-variant-numeric:tabular-nums;user-select:all}
+.co{color:var(--muted);font-size:13px;margin-top:8px}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <p class="eyebrow">邁達特數位｜明基佳世達集團</p>
+    <h1>銷售產品線</h1>
+    <p class="who">楊淳雯 Lisa Yang｜企業 AI 導入顧問</p>
+  </header>
+
+  <p class="slogan">企業雲端 <span>×</span> AI Token 應用 <span>×</span> 資安防護 <span>×</span> 資料中心系統網路平台整合</p>
+
+  <section>
+    <h2>重要產品名稱</h2>
+    <ul class="chips">
+      <li class="top">Cisco</li><li class="top">Dell</li><li class="top">Microsoft</li><li class="top">AWS</li><li class="top">GCP</li>
+      <li>Oracle</li><li>SQL</li><li>EDB</li><li>Red Hat</li><li>Check Point</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>銷售產品線</h2>
+    <div class="sol"><span class="cat">Solutions</span>雲端・AI Token・資安・資料中心系統網路平台整合</div>
+    <ul class="lines" style="margin-top:10px">
+      <li><span class="cat">Cloud &amp; AI</span><span class="brands">AWS、Microsoft Azure / Copilot、Google Cloud、OmniBud AI 防詐</span></li>
+      <li><span class="cat">Cybersecurity</span><span class="brands">Check Point、Zscaler、Cato、Radware</span></li>
+      <li><span class="cat">Infrastructure</span><span class="brands">Cisco、Dell、Pure Storage、Citrix / Omnissa</span></li>
+      <li><span class="cat">Data &amp; Backup</span><span class="brands">Veeam、Commvault、Oracle、Microsoft SQL Server、EDB</span></li>
+    </ul>
+  </section>
+
+  <footer>
+    <span class="name">楊淳雯 Lisa Yang</span>
+    <span class="contact">0917-156-053</span>
+    <span class="contact">lisayaung@metaage.com.tw</span>
+    <span class="co">邁達特數位股份有限公司 Metaage Corporation｜Tel 02-8797-8260 #2612</span>
+  </footer>
+</div>
+
+</body>
+</html>
